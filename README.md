@@ -1,53 +1,24 @@
-# About
+# README
 
-This repo is created to solve the hassle of the initial configuration for your Full-stack Laravel project. Use this repository if you want to use the following tools as your project stack.
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
--   [Laravel](https://laravel.com) (laravel 9)
--   [Vite js](https://vitejs.dev)
--   [Svelte](https://svelte.dev)
--   [Inertia js](https://inertiajs.com)
--   [Tailwind CSS](https://tailwindcss.com) (v3)
+Things you may want to cover:
 
-## Installation
+* Ruby version
 
-Clone the repository using git
+* System dependencies
 
-```bash
-git clone git@github.com:satis-apex/laravel-Inertia-Vite-Svelte-tailwind.git
+* Configuration
 
-```
+* Database creation
 
-## Usage
+* Database initialization
 
-```bash
-#cd into the project directory
-#copy env example to .env file
-cp .env.example .env
-php artisan key:generate
+* How to run the test suite
 
-#install PHP dependencies
-composer install
+* Services (job queues, cache servers, search engines, etc.)
 
-# install node dependencies
-npm install
+* Deployment instructions
 
-#Run project
-##for devlopment
-npm run dev
-or
-## for production
-npm run build
-
-#start php server
-php artisan serve
-```
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Since this project doesn't provide any test case create your own add as for your requirement.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
+* ...
