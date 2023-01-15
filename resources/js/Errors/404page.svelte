@@ -1,1 +1,1 @@
-<h1>404 vue file</h1>
+<h1>404 page file</h1>
