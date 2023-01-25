@@ -1,10 +1,10 @@
 import './bootstrap';
 import '../css/app.css';
 // @ts-ignore
-import { createInertiaApp } from '@inertiajs/inertia-svelte'
+import { createInertiaApp } from '@inertiajs/svelte'
 
 createInertiaApp({
-	resolve: async name => {
+	resolve: async (name:String) => {
 		let match
 		let page
 		const comps = import.meta.glob('./Pages/**/*.svelte');
@@ -14,7 +14,6 @@ createInertiaApp({
             return import('./Errors/404page.svelte');
 		}
 		page = (await match());
-
         return page
 	},
 	setup({ el, App, props }) {
