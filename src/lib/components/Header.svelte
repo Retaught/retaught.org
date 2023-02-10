@@ -2,7 +2,7 @@
 	import NavLink from "@/components/nav/NavLink.svelte";
 </script>
 
-<header class="bg-light/90 dark:bg-dark/90 backdrop-blur-lg flex justify-center">
+<header class="bg-light/90 dark:bg-dark/90 backdrop-blur-lg flex justify-center sticky top-0 px-4">
 	<div class="container flex justify-between py-2">
 		<div>
 			<!--! Temporary div for logo placement -->
@@ -11,10 +11,10 @@
 		</div>
 
 		<nav class="flex items-center gap-4">
-			<NavLink text="Roadmap" url="/" />
-			<NavLink text="All courses" url="/" />
-			<NavLink text="About" url="/" />
-			<NavLink text="Contact" url="/" />
+			<NavLink text="Roadmap" url="/roadmaps" />
+			<NavLink text="All courses" url="/courses" />
+			<NavLink text="About" url="/about" />
+			<NavLink text="Contact" url="/contact" />
 
 			<a 
 				href="/login"
