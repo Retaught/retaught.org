@@ -1,5 +1,5 @@
 <script lang="ts">
-	import NavLink from "@/components/nav/NavLink.svelte";
+	import NavLink from "$lib/components/nav/NavLink.svelte";
 </script>
 
 <header class="bg-light/90 dark:bg-dark/90 backdrop-blur-lg flex justify-center sticky top-0 px-4">
