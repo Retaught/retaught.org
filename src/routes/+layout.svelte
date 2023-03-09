@@ -5,17 +5,29 @@
     // Import data here
     import type { LayoutData } from './$types';
     export let data: LayoutData;
+    import { page } from '$app/stores';
+    import {redirect} from "@sveltejs/kit";
 
     // Import components here
     import Header from '$lib/components/Header.svelte';
     // import Footer from '$lib/components/Footer.svelte';
-    console.log(data)
+
+    // Check if maintenance is true and the current url pathname is not /maintenance
+    if (data.maintenance && $page.url.pathname !== '/maintenance') {
+        // if maintenance is true, redirect to maintenance page
+        throw redirect(302, '/maintenance')
+    }
+    // Check if maintenance is false and the current url pathname is /maintenance
+    else if (!data.maintenance && $page.url.pathname === '/maintenance') {
+        // if maintenance is false, redirect to home page
+        throw redirect(302, '/')
+    }
+
 </script>
 
 
 {#if data.maintenance}
-    <h1>Maintenance mode</h1>
-    <p>We'll be back in a few minutes.</p>
+    <slot />
 {:else}
     <Header />
     <slot />
