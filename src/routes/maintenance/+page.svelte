@@ -10,6 +10,7 @@
     text-center
 ">
     <div class="
+        px-2
         flex flex-col
         justify-center items-center
         grow
