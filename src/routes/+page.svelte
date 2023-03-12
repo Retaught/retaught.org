@@ -1,1 +1,3 @@
-<h1 class="text-2xl text-red-500">SvelteKit App</h1>
+<main class="container mx-auto mt-4 p-4 border">
+	<p>On est là</p>
+</main>
